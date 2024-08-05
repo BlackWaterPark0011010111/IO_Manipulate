@@ -1,15 +1,8 @@
-#https://github.com/P23-E06/python-basics-io-fs-i-BlackWaterPark0011010111/tree/main
 
-
-#Манипулирование файловой системой
-#Описание
-#В этом упражнении мы сосредоточимся на osмодуле
-#  управления деревом каталогов нашей файловой 
-# системы, а также немного попрактикуемся в чтении 
-# и записи файлов.
 
 import os
-ROOT = r"C:\Users\roxfo\Desktop\MySnake"
+import shutil
+ROOT = r".\Python"
 DATA_ROOT = ROOT
 # Печать значений ROOT и DATA_ROOT
 
@@ -51,10 +44,6 @@ print('---------------------------------------4----')
 
 #Функция classify принимает словарь и перемещает 
 # файлы в соответствующие каталоги:
-#
-#python
-#Копировать код
-import shutil
 # Задание 4: Функция для перемещения файлов в соответствующие каталоги
 def classify(categories):
     for directory, files in categories.items():
@@ -76,10 +65,7 @@ classify(categories)
 
 print('--------------------------------------5-----')
 #Создадим отчет pending_jobs.csv с использованием данных 
-# из customers.csv и jobs.csv:
-#
-#python
-#Копировать код
+
 import csv
 def generate_pending_jobs_report():
     reports_dir = os.path.join(DATA_ROOT)
